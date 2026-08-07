@@ -1,4 +1,4 @@
-# Flysystem Cloudinary Adapter
+# Laravel Cloudinary
 
 A Flysystem v3 adapter for Cloudinary with native support for **dynamic folder mode** (June 2024+ accounts), designed to work seamlessly with Spatie Laravel Media Library.
 
@@ -8,10 +8,12 @@ Most existing Cloudinary Flysystem adapters predate Cloudinary's dynamic folder 
 
 It also correctly implements `deleteDirectory()` via Cloudinary's Admin API (list-by-prefix + bulk delete), since Cloudinary has no real directories and most generic adapters silently fail on this operation.
 
+Supports both `cloudinary/cloudinary_php` v2 and v3.
+
 ## Installation
 
 ```bash
-composer require maido/flysystem-cloudinary
+composer require zwdev/laravel-cloudinary
 ```
 
 Add the disk to `config/filesystems.php`:
@@ -34,7 +36,7 @@ In `config/media-library.php`:
 
 ```php
 'disk_name' => 'cloudinary',
-'url_generator' => Maido\FlysystemCloudinary\MediaLibrary\CloudinaryUrlGenerator::class,
+'url_generator' => LaravelCloudinary\LaravelCloudinary\MediaLibrary\CloudinaryUrlGenerator::class,
 ```
 
 ## Known limitations
@@ -49,4 +51,4 @@ In `config/media-library.php`:
 
 ## License
 
-Laravel Cloudinary Support is open-sourced software licensed under the [MIT license](LICENSE.md).
+Laravel Cloudinary is open-sourced software licensed under the [MIT license](LICENSE.md).
