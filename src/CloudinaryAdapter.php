@@ -64,7 +64,7 @@ class CloudinaryAdapter implements FilesystemAdapter
     /**
      * @param  resource  $contents
      */
-    public function writeStream(string $path, $contents, Config $config): void // @pest-ignore-type
+    public function writeStream(string $path, $contents, Config $config): void
     {
         $tmpFile = tmpfile();
 
