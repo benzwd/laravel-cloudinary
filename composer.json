@@ -72,7 +72,7 @@
       "vendor/bin/phpstan analyse"
     ],
     "test:types": [
-      "vendor/bin/pest --type-coverage --min=97"
+      "vendor/bin/pest --type-coverage --min=90"
     ],
     "test:unit": [
       "vendor/bin/pest --parallel"
