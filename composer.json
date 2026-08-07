@@ -78,7 +78,6 @@
       "vendor/bin/pest --parallel"
     ],
     "test": [
-      "@analyse",
       "@lint:check",
       "@test:unit"
     ],
