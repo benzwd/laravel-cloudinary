@@ -61,7 +61,11 @@ class CloudinaryAdapter implements FilesystemAdapter
         $this->upload($path, $contents, $config);
     }
 
-    public function writeStream(string $path, $contents, Config $config): void
+    /**
+     * @param  resource  $contents
+     */
+    // @phpstan-ignore typeCoverage.paramTypeCoverage
+    public function writeStream(string $path, $contents, Config $config): void // @pest-ignore-type
     {
         $tmpFile = tmpfile();
 
