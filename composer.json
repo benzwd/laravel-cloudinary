@@ -19,8 +19,9 @@
   ],
   "require": {
     "php": "^8.3",
-    "cloudinary/cloudinary_php": "^2.13",
-    "illuminate/support": "^12.0||^13.0"
+    "league/flysystem": "^3.0",
+    "cloudinary/cloudinary_php": "^2.13|^3.0",
+    "illuminate/support": "^11.0|^12.0|^13.0"
   },
   "require-dev": {
     "larastan/larastan": "^3.9",
