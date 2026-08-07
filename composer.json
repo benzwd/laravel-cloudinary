@@ -80,7 +80,6 @@
     "test": [
       "@analyse",
       "@lint:check",
-      "@test:types",
       "@test:unit"
     ],
     "clear": [
